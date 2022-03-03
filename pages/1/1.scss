@@ -1,11 +1,37 @@
-$color1: red;
+$color1: aliceblue;
+$color2: cornflowerblue;
+$font: Tahoma;
 
 button {
-  color: $color1;
+  background: $color1;
+  height: 5vh;
+  width: 10vw;
+  transition: 0.3s;
+
+  :hover {
+    opacity: 50%;
+    font-size: 100%;
+  }
 }
 
-div {
-  background: aliceblue;
-  color: $color1;
+img {
+  height: 50vh;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
 }
 
+p {
+  text-align: center;
+  font-family: $font;
+}
+
+form {
+  width: fit-content;
+  background: $color2;
+  margin: 0 auto;
+}
+
+header footer{
+  text-align: center;
+}
