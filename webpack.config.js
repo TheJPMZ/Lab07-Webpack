@@ -1,5 +1,3 @@
-// Documentacion obtenida de https://www.victorvr.com/tutorial/que-es-webpack
-
 const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 

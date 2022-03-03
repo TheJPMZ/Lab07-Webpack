@@ -1,9 +1,5 @@
-$color1: aliceblue;
-$color2: cornflowerblue;
-$font: Tahoma;
-
 button {
-  background: $color1;
+  background: aliceblue;
   height: 5vh;
   width: 10vw;
   transition: 0.3s;
@@ -23,15 +19,17 @@ img {
 
 p {
   text-align: center;
-  font-family: $font;
+  font-family: Tahoma;
 }
 
 form {
   width: fit-content;
-  background: $color2;
+  background: cornflowerblue;
   margin: 0 auto;
 }
 
-header, footer{
+header, footer {
   text-align: center;
 }
+
+/*# sourceMappingURL=2.css.map */

@@ -1,4 +1,4 @@
-window.onload = function () {
+window.onload = function() {
 
     document.body.innerHTML = "" +
         "<header class=\"animate__animated animate__bounce\" >\n" +
@@ -26,3 +26,4 @@ window.onload = function () {
         "Jose Pablo Monzon 20309\n" +
         "</footer>"
 }
+

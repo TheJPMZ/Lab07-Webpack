@@ -4,7 +4,8 @@ button {
   width: 10vw;
   transition: 0.3s;
 }
-button :hover {
+
+button:hover {
   opacity: 50%;
   font-size: 100%;
 }
@@ -27,7 +28,7 @@ form {
   margin: 0 auto;
 }
 
-header footer {
+header, footer {
   text-align: center;
 }
 
