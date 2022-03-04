@@ -11165,7 +11165,7 @@ form {
   margin: 0 auto;
 }
 
-header, footer {
+header, footer, h1, .h1, h2, .h2 {
   text-align: center;
 }
 
@@ -11173,10 +11173,6 @@ a {
   font-family: Tahoma;
   font-size: large;
   color: black;
-}
-
-h1, .h1, h2, .h2 {
-  text-align: center;
 }
 
 /*# sourceMappingURL=index.css.map */

@@ -51,7 +51,7 @@ form {
   margin: 0 auto;
 }
 
-header, footer{
+header, footer, h1, h2{
   text-align: center;
 }
 
@@ -59,8 +59,4 @@ a {
   font-family: $font;
   font-size: large;
   color: black;
-}
-
-h1, h2{
-  text-align: center;
 }

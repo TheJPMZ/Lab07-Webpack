@@ -1,4 +1,5 @@
     import {p1} from './1/1.js';
+    import 'index.scss';
 
 
     export function pindex(){
