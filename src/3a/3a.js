@@ -1,10 +1,9 @@
-import imagen from '../assets/Base.jpg';
+import Imagen from '../assets/entrada.jpg';
 import {pindex} from "../index";
 import {p35a} from "../3.5a/3.5";
 import {p1} from "../1/1";
-import {p3a} from "../3a/3a";
 
-export function p2 (){
+export function p3a (){
     document.body.innerHTML = "\n" +
         "        <header>\n" +
         "            El dia de la reunion\n" +
@@ -20,22 +19,21 @@ export function p2 (){
         "\n" +
         "        <div>\n" +
         "            <p>\n" +
-        "                <i>“Porque tan serio Ken?”</i> pregunto Michael jocosamente por el intercomunicador.<br>\n" +
-        "                “Finalmente llegaste Michael, llevo 20 minutos extras cubriendo la puerta sin poder rotar”<br>\n" +
-        "                <i>“Tranquilo mi amigo, déjame entrar y en unos 2 minutos llego a suplirte”</i>\n" +
+        "                Dejas entrar a Michael.<br>\n" +
+        "                Finalmente vas a poder cambiar de turno, mientras tanto, debes seguir atendiendo la puerta, un trabajo bastante sencillo pero aburrido. No hay muchas personas el dia de hoy.<br>\n" +
         "            </p>\n" +
         "            <p>\n" +
-        "                Notas que sus papeles brillan por su ausencia\n" +
+        "                Esta calma no duraria mucho, la reunion se avecina.\n" +
         "            </p>\n" +
-        "        </div>  \n" +
+        "        </div>\n" +
         "\n" +
         " <div class=\"container\">\n" +
         "                <div class=\"row\">\n" +
         "                    <div class=\"col\">\n" +
-        "                        <button id=\"anti\"> Dejar entrar a michael</button>\n" +
+        "                        <button id=\"anti\"> Distraerse</button>\n" +
         "                    </div>\n" +
         "                    <div class=\"col\">\n" +
-        "                        <button id=\"web\"> No dejar entrar </button>\n" +
+        "                        <button id=\"web\"> Prestar atencion</button>\n" +
         "                    </div>\n" +
         "                </div>\n" +
         "            </div>\n" +
@@ -43,9 +41,11 @@ export function p2 (){
         "        <footer>\n" +
         "            <hr>\n" +
         "            Jose Pablo Monzon 20309\n" +
-        "        </footer>\n"
+        "        </footer>\n" +
+        "\n"
 
-    document.getElementById('img').src = imagen
-    document.getElementById('anti').onmousedown = function () { p3a()}
-    document.getElementById('web').onmousedown = function () { p1()};
+
+    document.getElementById('img').src = Imagen;
+    document.getElementById('anti').onmousedown = function () {p35a()}
+    document.getElementById('web').onmousedown = function () {p1()};
 }
