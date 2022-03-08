@@ -1,6 +1,17 @@
 const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const MiniCSSExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
+
+    plugins: [
+        new HtmlWebpackPlugin({
+            filename: 'index.html',
+            template: 'src/index.html',
+            hash: true
+        }),
+        new MiniCSSExtractPlugin()
+    ],
 
     entry: {
         index: "./src/index.js"
@@ -14,15 +25,11 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /\.s[ac]ss$/i,
+                test: /\.css$/,
                 use: [
-                    // Creates `style` nodes from JS strings
-                    "style-loader",
-                    // Translates CSS into CommonJS
-                    // Compiles Sass to CSS
-                    "sass-loader",
-                    "css-loader",
-                ],
+                    MiniCSSExtractPlugin.loader,
+                    "css-loader"
+                ]
             },
             {
                 test: /\.(gif|png|jpe?g)$/,
@@ -45,6 +52,14 @@ module.exports = {
                     outputPath: 'aud/',
                     publicPath: 'aud/'
                 }
+            },
+            {
+                test: /\.scss$/,
+                use: [
+                    MiniCSSExtractPlugin.loader,
+                    "css-loader",
+                    'sass-loader'
+                ]
             },
         ],
     },
